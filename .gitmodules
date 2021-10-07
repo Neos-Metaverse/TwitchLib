@@ -1,12 +1,12 @@
 [submodule "TwitchLib.PubSub"]
 	path = TwitchLib.PubSub
-	url = https://github.com/TwitchLib/TwitchLib.PubSub
+	url = https://github.com/Neos-Metaverse/TwitchLib.PubSub
 [submodule "TwitchLib.Client"]
 	path = TwitchLib.Client
-	url = https://github.com/TwitchLib/TwitchLib.Client
+	url = https://github.com/Neos-Metaverse/TwitchLib.Client
 [submodule "TwitchLib.Api"]
 	path = TwitchLib.Api
-	url = https://github.com/TwitchLib/TwitchLib.Api
+	url = https://github.com/Neos-Metaverse/TwitchLib.Api
 [submodule "TwitchLib.WebSocket"]
 	path = TwitchLib.WebSocket
 	url = https://github.com/TwitchLib/TwitchLib.WebSocket
