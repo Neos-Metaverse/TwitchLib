@@ -34,6 +34,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.Api/TwitchLib.Api/TwitchLib.Api.csproj'
+    includeReferencedProjects: true
     configuration: 'Release'
     versioningScheme: 'byPrereleaseNumber'
     majorVersion: '3'
@@ -44,6 +45,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.Client/TwitchLib.Client/TwitchLib.Client.csproj'
+    includeReferencedProjects: true
     configuration: 'Release'
     versioningScheme: 'byPrereleaseNumber'
     majorVersion: '3'
@@ -54,6 +56,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.PubSub/TwitchLib.PubSub/TwitchLib.PubSub.csproj'
+    includeReferencedProjects: true
     configuration: 'Release'
     versioningScheme: 'byPrereleaseNumber'
     majorVersion: '3'
