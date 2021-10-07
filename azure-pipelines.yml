@@ -34,7 +34,87 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.Api/TwitchLib.Api/TwitchLib.Api.csproj'
-    includeReferencedProjects: true
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Core/TwitchLib.Api.Core.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Core.Enums/TwitchLib.Api.Core.Enums.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Core.Interfaces/TwitchLib.Api.Core.Interfaces.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Core.Models/TwitchLib.Api.Core.Models.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Helix/TwitchLib.Api.Helix.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.Helix.Models/TwitchLib.Api.Helix.Models.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.V5/TwitchLib.Api.V5.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '2'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Api/TwitchLib.Api.V5.Models/TwitchLib.Api.V5.Models.csproj'
+    versioningScheme: byPrereleaseNumber
     configuration: 'Release'
     majorVersion: '3'
     minorVersion: '1'
@@ -44,7 +124,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.Client/TwitchLib.Client/TwitchLib.Client.csproj'
-    includeReferencedProjects: true
+    versioningScheme: byPrereleaseNumber
     configuration: 'Release'
     majorVersion: '3'
     minorVersion: '1'
@@ -54,7 +134,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'TwitchLib.PubSub/TwitchLib.PubSub/TwitchLib.PubSub.csproj'
-    includeReferencedProjects: true
+    versioningScheme: byPrereleaseNumber
     configuration: 'Release'
     majorVersion: '3'
     minorVersion: '1'
