@@ -133,6 +133,26 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
+    packagesToPack: 'TwitchLib.Client/TwitchLib.Client.Enums/TwitchLib.Client.Enums.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '5'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.Client/TwitchLib.Client.Models/TwitchLib.Client.Models.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '5'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
     packagesToPack: 'TwitchLib.PubSub/TwitchLib.PubSub/TwitchLib.PubSub.csproj'
     versioningScheme: byPrereleaseNumber
     configuration: 'Release'
@@ -140,6 +160,35 @@ steps:
     minorVersion: '1'
     patchVersion: '4'
 
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.PubSub/TwitchLib.PubSub/TwitchLib.PubSub.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '4'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.PubSub/TwitchLib.Communication/src/TwitchLib.Communication/TwitchLib.Communication.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '1'
+    minorVersion: '0'
+    patchVersion: '1'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'TwitchLib.WebSocket/TwitchLib.WebSocket.csproj'
+    versioningScheme: byPrereleaseNumber
+    configuration: 'Release'
+    majorVersion: '1'
+    minorVersion: '0'
+    patchVersion: '1'
 
 - task: NuGetCommand@2
   inputs:
