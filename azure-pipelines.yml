@@ -180,15 +180,15 @@ steps:
     minorVersion: '0'
     patchVersion: '1'
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'pack'
-    packagesToPack: 'TwitchLib.WebSocket/TwitchLib.WebSocket.csproj'
-    versioningScheme: byPrereleaseNumber
-    configuration: 'Release'
-    majorVersion: '1'
-    minorVersion: '0'
-    patchVersion: '1'
+#- task: NuGetCommand@2
+#  inputs:
+#    command: 'pack'
+#    packagesToPack: 'TwitchLib.WebSocket/TwitchLib.WebSocket.csproj'
+#    versioningScheme: byPrereleaseNumber
+#    configuration: 'Release'
+#    majorVersion: '1'
+#    minorVersion: '0'
+#    patchVersion: '1'
 
 - task: NuGetCommand@2
   inputs:
