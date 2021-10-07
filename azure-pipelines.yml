@@ -28,6 +28,7 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    msbuildArgs: '-graph:true -r'
 
 - task: NuGetCommand@2
   inputs:
